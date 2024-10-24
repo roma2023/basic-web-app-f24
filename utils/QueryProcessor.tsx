@@ -77,5 +77,68 @@ export default function QueryProcessor(query: string): string {
   }
 
   
+  "Which of the following numbers are primes: 17, 69, 3, 56, 37?"
+  if (query.toLowerCase().includes("primes")) {
+    const parts = query.split(" ");
+    const num1 = parts[7].split(",")[0];
+    const num2 = parts[8].split(",")[0];
+    const num3 = parts[9].split(",")[0];
+    const num4 = parts[10].split(",")[0];
+    const num5 = parts[11].split("?")[0];
+    
+    var isPrime = true
+    for(let i = 2; i < parseInt(num1); i++) {
+      if (parseInt(num1) % i === 0) {
+        isPrime = false;
+        break
+      }
+    }
+    if (isPrime) {
+      return (num1);
+    }
+
+    var isPrime = true
+    for(let i = 2; i < parseInt(num2); i++) {
+      if (parseInt(num2) % i === 0) {
+        const isPrime = false;
+        break
+      }
+    }
+    if (isPrime) {
+      return (num2);
+    }
+    var isPrime = true
+    for(let i = 2; i < parseInt(num3); i++) {
+      if (parseInt(num3) % i === 0) {
+        const isPrime = false;
+        break
+      }
+    }
+    if (isPrime) {
+      return (num3);
+    }
+    var isPrime = true
+    for(let i = 2; i < parseInt(num4); i++) {
+      if (parseInt(num4) % i === 0) {
+        const isPrime = false;
+        break
+      }
+    }
+    if (isPrime) {
+      return (num4);
+    }
+    
+    var isPrime = true
+    for(let i = 2; i < parseInt(num5); i++) {
+      if (parseInt(num5) % i === 0) {
+        const isPrime = false;
+        break
+      }
+    }
+    if (isPrime) {
+      return (num5);
+    }
+  }
+  
   return "";
 }
