@@ -39,5 +39,43 @@ export default function QueryProcessor(query: string): string {
     return (Math.max(parseInt(num1), parseInt(num2), parseInt(num3)).toString());
   }
 
+  "Which of the following numbers is both a square and a cube: 64, 125, 1369, 4564, 1559, 2312, 3491?"
+
+  if (query.toLowerCase().includes("square")) {
+    const parts = query.split(" ");
+    const num1 = parts[13].split(",")[0];
+    const num2 = parts[14].split(",")[0];
+    const num3 = parts[15].split(",")[0];
+    const num4 = parts[16].split(",")[0];
+    const num5 = parts[17].split(",")[0];
+    const num6 = parts[18].split(",")[0];
+    const num7 = parts[19].split("?")[0];
+    
+    for (let i = 0; i < 7; i++) {
+      if (Math.sqrt(parseInt(num1)) % 1 === 0 && Math.cbrt(parseInt(num1)) % 1 === 0) {
+        return (num1);
+      }
+      if (Math.sqrt(parseInt(num2)) % 1 === 0 && Math.cbrt(parseInt(num2)) % 1 === 0) {
+        return (num2);
+      }
+      if (Math.sqrt(parseInt(num3)) % 1 === 0 && Math.cbrt(parseInt(num3)) % 1 === 0) {
+        return (num3);
+      }
+      if (Math.sqrt(parseInt(num4)) % 1 === 0 && Math.cbrt(parseInt(num4)) % 1 === 0) {
+        return (num4);
+      }
+      if (Math.sqrt(parseInt(num5)) % 1 === 0 && Math.cbrt(parseInt(num5)) % 1 === 0) {
+        return (num5);
+      }
+      if (Math.sqrt(parseInt(num6)) % 1 === 0 && Math.cbrt(parseInt(num6)) % 1 === 0) {
+        return (num6);
+      }
+      if (Math.sqrt(parseInt(num7)) % 1 === 0 && Math.cbrt(parseInt(num7)) % 1 === 0) {
+        return (num7);
+      }
+    }
+  }
+
+  
   return "";
 }
