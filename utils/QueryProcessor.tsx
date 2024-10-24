@@ -25,6 +25,12 @@ export default function QueryProcessor(query: string): string {
     return (parseInt(parts[2]) + parseInt(num2)).toString();
   }
 
+  if (query.toLowerCase().includes("minus")) {
+    const parts = query.split(" ");
+    const num2 = parts[4].split("?")[0]
+    return (parseInt(parts[2]) - parseInt(num2)).toString();
+  }
+
   if (query.toLowerCase().includes("multiplied")) {
     const parts = query.split(" ");
     return (parseInt(parts[2]) * parseInt(parts[5])).toString();
