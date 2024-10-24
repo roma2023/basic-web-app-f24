@@ -52,25 +52,25 @@ export default function QueryProcessor(query: string): string {
     const num7 = parts[19].split("?")[0];
     
     for (let i = 0; i < 7; i++) {
-      if (Math.sqrt(parseInt(num1)) % 1 === 0 && Math.cbrt(parseInt(num1)) % 1 === 0) {
+      if (Math.sqrt(parseInt(num1)) % 1 === 0.0 && Math.cbrt(parseInt(num1)) % 1 === 0.0) {
         return (num1);
       }
-      if (Math.sqrt(parseInt(num2)) % 1 === 0 && Math.cbrt(parseInt(num2)) % 1 === 0) {
+      if (Math.sqrt(parseInt(num2)) % 1 === 0.0 && Math.cbrt(parseInt(num2)) % 1 === 0.0) {
         return (num2);
       }
-      if (Math.sqrt(parseInt(num3)) % 1 === 0 && Math.cbrt(parseInt(num3)) % 1 === 0) {
+      if (Math.sqrt(parseInt(num3)) % 1 === 0.0 && Math.cbrt(parseInt(num3)) % 1 === 0.0) {
         return (num3);
       }
-      if (Math.sqrt(parseInt(num4)) % 1 === 0 && Math.cbrt(parseInt(num4)) % 1 === 0) {
+      if (Math.sqrt(parseInt(num4)) % 1 === 0.0 && Math.cbrt(parseInt(num4)) % 1 === 0.0) {
         return (num4);
       }
-      if (Math.sqrt(parseInt(num5)) % 1 === 0 && Math.cbrt(parseInt(num5)) % 1 === 0) {
+      if (Math.sqrt(parseInt(num5)) % 1 === 0.0 && Math.cbrt(parseInt(num5)) % 1 === 0.0) {
         return (num5);
       }
-      if (Math.sqrt(parseInt(num6)) % 1 === 0 && Math.cbrt(parseInt(num6)) % 1 === 0) {
+      if (Math.sqrt(parseInt(num6)) % 1 === 0.0 && Math.cbrt(parseInt(num6)) % 1 === 0.0) {
         return (num6);
       }
-      if (Math.sqrt(parseInt(num7)) % 1 === 0 && Math.cbrt(parseInt(num7)) % 1 === 0) {
+      if (Math.sqrt(parseInt(num7)) % 1 === 0.0 && Math.cbrt(parseInt(num7)) % 1 === 0.0) {
         return (num7);
       }
     }
