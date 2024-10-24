@@ -25,6 +25,11 @@ export default function QueryProcessor(query: string): string {
     return (parseInt(parts[2]) + parseInt(num2)).toString();
   }
 
+  if (query.toLowerCase().includes("multiplied")) {
+    const parts = query.split(" ");
+    return (parseInt(parts[2]) * parseInt(parts[5])).toString();
+  }
+
   "Which of the following numbers is the largest: 52, 23, 8?"
   if (query.toLowerCase().includes("largest")) {
     const parts = query.split(" ");
