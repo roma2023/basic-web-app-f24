@@ -18,5 +18,20 @@ export default function QueryProcessor(query: string): string {
     //TODO update the corresponding test case in __tests__
     return ( "romaaaaaaaaaa" );
   }
+
+  if (query.toLowerCase().includes("plus")) {
+    const parts = query.split(" ");
+    return (parts[2] + parts[4]).toString();
+  }
+
+  "Which of the following numbers is the largest: 52, 23, 8?"
+  if (query.toLowerCase().includes("largest")) {
+    const parts = query.split(" ");
+    const num1 = parts[8].split(",")[0];
+    const num2 = parts[9].split(",")[0];
+    const num3 = parts[10].split(",")[0];
+    return (Math.max(parseInt(num1), parseInt(num2), parseInt(num3)).toString());
+  }
+
   return "";
 }
